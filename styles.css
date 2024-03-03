@@ -1,3 +1,15 @@
+@property --primary-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #111111;
+}
+
+@property --secondary-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #1f1f1f;
+}
+
 @property --neon-color {
     syntax: "<color>";
     inherits: false;
@@ -5,7 +17,7 @@
 }
 
 body {
-    background-color: #1f1f1f; /* Dark grey background */
+    background-color: var(--secondary-color); /* Dark grey background */
     color: #efefef; /* White text */
     font-family: Arial, sans-serif;
     margin: 0;
@@ -20,14 +32,14 @@ body {
     padding: 8px;
     width: 100%;
     border-radius: 10px;
-    background-color: #111111;
+    background-color: var(--primary-color);
     height: 30px;
-    border: 2px solid var(--neon-color); /* Purple outline */
-    box-shadow: 0 0 10px var(--neon-color); /* Glowing effect */
+    border: 2px solid var(--neon-color);
+    box-shadow: 0 0 10px var(--neon-color);
 }
 .navbar a {
     float: left;
-    display: block;
+    display: box;
     color: #f2f2f2;
     text-align: center;
     padding: 8px 8px;
@@ -39,61 +51,59 @@ body {
 }
 
 .container {
-    margin-top: 60px; /* Adjust based on navbar height */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 60px); /* Adjust based on navbar height */
 }
 
 .content-box {
-    background-color: #111111; /* Darker shade of grey */
+    background-color: var(--primary-color);
     border-radius: 20px;
     padding: 40px;
-    text-align: center;
-    width: 60%; /* Adjust width as needed */
-    height: 80%; /* Adjust height as needed */
-    box-shadow: 0 0 10px var(--neon-color);
+    width: 50%;
+    height: auto;
     margin-bottom: 20px;
+    box-shadow: 0 0 10px var(--neon-color);
+    border: 2px solid var(--neon-color);
+    overflow: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    top: 90px;
+    bottom: 30px;
 }
 
 .content-box h1 {
-    margin-top: 0;
+    text-align: center;
+    margin-top: none;
 }
 
-.content-box ul {
-    list-style-type: none;
-    padding: 0;
+.content-box-content {
+    text-align: justify;
 }
 
-.content-box ul li {
-    margin-bottom: 10px;
+.contact {
+    text-align: left;
+    position: absolute;
+    bottom: 20px;
+    ul {
+        list-style-type: none;
+        text-align: left
+    }
+    li a {
+        text-decoration: none;
+        color: #f2f2f2;
+    }
 }
 
-.content-box {
-    border: 2px solid var(--neon-color); /* Purple outline */
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.contact-info li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    display: list-item;
-}
-
-.footer {
-    margin: 10px;
+#footer {
     position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
-    color: #efefef; /* White text */
     text-align: center;
+    color:#808080
+}
+
+::-webkit-scrollbar {
+    width: 0px;;
 }
