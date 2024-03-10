@@ -13,7 +13,7 @@
 @property --neon-color {
     syntax: "<color>";
     inherits: false;
-    initial-value: #8987ff;
+    initial-value: #FF5F1F;
 }
 
 body {
@@ -31,22 +31,30 @@ body {
     margin: 8px;
     padding: 8px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: var(--primary-color);
     height: 30px;
     border: 2px solid var(--neon-color);
     box-shadow: 0 0 10px var(--neon-color);
 }
-.navbar a {
+
+.navbar #logo {
     float: left;
-    display: box;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 8px 8px;
+    position: fixed;
+    top: 0;
+    width: 150px;
+}
+
+.navbar a {
+    position: relative;
+    left: 160px;
     text-decoration: none;
+    color: #f2f2f2;
 }
 
 .navbar li {
+    margin: 8px;
+    float: left;
     display: inline;
 }
 
@@ -78,13 +86,11 @@ body {
 }
 
 .content-box-content {
-    text-align: justify;
+    text-align: left;
 }
 
 .contact {
-    text-align: left;
-    position: absolute;
-    bottom: 20px;
+    text-align: left;    
     ul {
         list-style-type: none;
         text-align: left
