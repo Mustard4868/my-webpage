@@ -85,6 +85,15 @@ body {
     margin-top: none;
 }
 
+.content-box iframe {
+    display: block;
+    width: 100%;
+    min-width: fit-content;
+    min-height: 500px;
+    margin: 0px auto;
+    border: none;
+}
+
 .content-box-content {
     text-align: left;
 }
