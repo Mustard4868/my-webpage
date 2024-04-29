@@ -10,6 +10,7 @@
         rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/robotic-arm.png">
     <script src="https://kit.fontawesome.com/e4521c2cd0.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <title>mstrd.eu | Home</title>
 </head>
 
@@ -24,7 +25,7 @@
         </div>
 
         <div class="w3-hide-medium w3-hide-large">
-            <div class="w3-dropdown-hover w3-mobile">
+            <div onclick="clickMenu()" class="w3-dropdown-click w3-mobile w3-black">
                 <button class="w3-button w3-mobile w3-black w3-hover-deep-orange">MENU</button>
                 <div class="w3-dropdown-content w3-bar-block">
                     <a href="#home" class="w3-bar-item w3-button w3-black w3-hover-deep-orange w3-mobile">Home</a>
@@ -64,45 +65,21 @@
     <div class="w3-container w3-padding-32" id="projects">
         <h3 class="w3-border-bottom w3-border-deep-orange w3-padding-16">Projects</h3>
         <div class="w3-row">
-            <!-- 33% -->
+            <!-- 33% // Column 1 -->
             <div class="w3-third">
                 <a class="w3-hover-opacity" href="projects/webpage.html">
                     <div class="w3-card w3-margin">
-                        <img src="images/code-screenshot.png" width="100%" alt="">
+                        <img src="images/code-screenshot.png" width="100%" alt="Screenshot of HTML code">
                         <p class="w3-padding">This Webpage!</p>
                     </div>
                 </a>
-                <a class="w3-hover-opacity" href="#">
-                    <div class="w3-card w3-margin">
-                        <img src="images/placeholder.png" width="100%" alt="">
-                        <p class="w3-padding">Placeholder</p>
-                    </div>
-                </a>
-                <a class="w3-hover-opacity" href="#">
-                    <div class="w3-card w3-margin">
-                        <img src="images/placeholder.png" width="100%" alt="">
-                        <p class="w3-padding">Placeholder</p>
-                    </div>
-                </a>
             </div>
-            <!-- 66% -->
+            <!-- 66% // Column 2 -->
             <div class="w3-third">
-                <a class="w3-hover-opacity" href="#">
+                <a class="w3-hover-opacity" href="projects/watersense.html">
                     <div class="w3-card w3-margin">
-                        <img src="images/placeholder.png" width="100%" alt="">
-                        <p class="w3-padding">Placeholder</p>
-                    </div>
-                </a>
-                <a class="w3-hover-opacity" href="#">
-                    <div class="w3-card w3-margin">
-                        <img src="images/placeholder.png" width="100%" alt="">
-                        <p class="w3-padding">Placeholder</p>
-                    </div>
-                </a>
-                <a class="w3-hover-opacity" href="#">
-                    <div class="w3-card w3-margin">
-                        <img src="images/placeholder.png" width="100%" alt="">
-                        <p class="w3-padding">Placeholder</p>
+                        <img src="images/waterSense.png" width="100%" alt="Device and a cat">
+                        <p class="w3-padding">waterSense</p>
                     </div>
                 </a>
             </div>
@@ -110,20 +87,8 @@
             <div class="w3-third">
                 <a class="w3-hover-opacity" href="#">
                     <div class="w3-card w3-margin">
-                        <img src="images/placeholder.png" width="100%" alt="">
-                        <p class="w3-padding">Placeholder</p>
-                    </div>
-                </a>
-                <a class="w3-hover-opacity" href="#">
-                    <div class="w3-card w3-margin">
-                        <img src="images/placeholder.png" width="100%" alt="">
-                        <p class="w3-padding">Placeholder</p>
-                    </div>
-                </a>
-                <a class="w3-hover-opacity" href="#">
-                    <div class="w3-card w3-margin">
-                        <img src="images/placeholder.png" width="100%" alt="">
-                        <p class="w3-padding">Placeholder</p>
+                        <img src="images/lenne-robot-full-prototype.png" width="100%" alt="Picture of Robot prototype">
+                        <p class="w3-padding">LENN-E Robot</p>
                     </div>
                 </a>
             </div>
