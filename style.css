@@ -31,4 +31,16 @@ body {
         background-attachment: scroll;
         min-height: 400px;
     }
+
+    iframe {
+        max-width: 350px;
+        min-height: 180px;
+        width: 100%;
+        height: 56.25%;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
