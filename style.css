@@ -27,8 +27,14 @@ textarea {
     min-height: 100%;
 }
 
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
+.w3-wide {
+    letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+    cursor: pointer;
+}
+
 .w3-card {
     background-color: black;
     padding: 1%;
