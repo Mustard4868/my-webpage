@@ -4,40 +4,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/robotic-arm.png">
+    <script src="https://kit.fontawesome.com/e4521c2cd0.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <title>mstrd.eu | Home</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav>
-        <ul class="navbar">
-            <img id="logo" src="images/logo_transparant.png" alt="">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        <ul>
-    </nav>
+    <!-- Navbar -->
+    <div class="w3-top">
 
-    <div class="container">
-        <div class="content-box">
-            <main class="content-box-content">
-                <h1>Home</h1>
-                <p>Hello and welcome to my personal webpage!
-                    <br>Feel free to read more about me and my projects, and don't hesitate to get in touch!</p>
-                </p>
-            </main>
-            <div class="contact">
-                <h4>Contact me:</h4>
-                <ul>
-                    <li>E-mail - <a href="mailto:info@mstrd.eu">info@mstrd.eu</a></li>
-                    <li>GitHub - <a href="https://github.com/mustard4868">mustard4868</a></li>
+        <!-- Wide screens -->
+        <div class="w3-bar w3-black w3-hide-small w3-animate-top">
+            <a href="#home" class="w3-bar-item w3-button w3-hover-deep-orange">Home</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hover-deep-orange">About</a>
+            <a href="#projects" class="w3-bar-item w3-button w3-hover-deep-orange">Projects</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hover-deep-orange">Contact</a>
+        </div>
+
+        <!-- Mobile screens -->
+        <div class="w3-hide-medium w3-hide-large w3-animate-top">
+            <div onclick="clickMenu()" class="w3-dropdown-click w3-mobile w3-black">
+                <button class="w3-button w3-mobile w3-black w3-hover-deep-orange">MENU</button>
+                <div class="w3-dropdown-content w3-bar-block">
+                    <a href="#home" class="w3-bar-item w3-button w3-black w3-hover-deep-orange w3-mobile">Home</a>
+                    <a href="#about" class="w3-bar-item w3-button w3-black w3-hover-deep-orange w3-mobile">About</a>
+                    <a href="#projects"
+                        class="w3-bar-item w3-button w3-black w3-hover-deep-orange w3-mobile">Projects</a>
+                    <a href="#contact" class="w3-bar-item w3-button w3-black w3-hover-deep-orange w3-mobile">Contact</a>
+                </div>
             </div>
         </div>
-</body>
-<footer>
-    <div id="footer">
-        <p>&copy; 2024 mstrd.eu</p>
     </div>
-</footer>
+
+    <!-- Header -->
+    <div class="bgimg w3-display-container w3-opacity-min" id="home" style="padding-top: 33%;">
+        <div class="w3-display-middle" style="white-space: nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity">MSTRD.EU</span>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="w3-container w3-padding-32" id="about">
+        <h3 class="w3-border-bottom w3-border-deep-orange w3-padding-16">About</h3>
+        <div class="w3-row-padding">
+            <div class="w3-twothird w3-large w3-mobile w3-left">
+                <p>
+                    <b>Welcome to my webpage, where creativity and technology come together!</b>
+                    <br><br>
+                    I am an electrical engineering student with a background in mechatronics engineering.
+                    Besides my studies, I work part-time as a CAD engineer at a local company that has expertise in
+                    industries such as: Food & Pharma, Process & Energy and Machinery & Manufacturing.
+                    <br><br>
+                    I have always been fascinated by technology and how it can be used to automate entire processes.
+                    This is why I'm particularely interested in robotics, automation and the internet of things.
+                    <br><br>
+                    My goal is to combine my knowledge in electrical engineering and mechatronics to create innovative
+                    solutions that contribute to a more sustainable future.
+                </p>
+            </div>
+            <div class="w3-rest w3-card w3-black w3-right w3-hide-small w3-animate-right" style="min-width: 15%;">
+                <h4 class=" w3-border-bottom w3-center">Find me here!</h4>
+                <ul>
+                    <li>
+                        <a href="https://linkedin.com/in/nbaarsma" target="_blank">
+                            <i class="fa-brands fa-linkedin w3-padding"></i>LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mustard4868" target="_blank">
+                            <i class="fa-brands fa-github w3-padding"></i>GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="w3-container w3-padding-32" id="projects">
+            <h3 class="w3-border-bottom w3-border-deep-orange w3-padding-16">Projects</h3>
+            <div class="w3-row">
+                <!-- 33% // Column 1 -->
+                <div class="w3-third">
+                    <a class="w3-hover-opacity" href="projects/this-webpage.html">
+                        <div class="w3-card w3-margin">
+                            <img src="images/code-screenshot.png" width="100%" alt="Screenshot of HTML code">
+                            <p class="w3-padding">This Webpage!</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- 66% // Column 2 -->
+                <div class="w3-third">
+                    <a class="w3-hover-opacity" href="projects/watersense.html">
+                        <div class="w3-card w3-margin">
+                            <img src="images/waterSense.png" width="100%" alt="Device and a cat">
+                            <p class="w3-padding">waterSense</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- 100% // Column 3 -->
+                <div class="w3-third">
+                    <a class="w3-hover-opacity" href="projects/lenn-e-robot.html">
+                        <div class="w3-card w3-margin">
+                            <img src="images/lenne-robot-full-prototype.png" width="100%"
+                                alt="Picture of Robot prototype">
+                            <p class="w3-padding">LENN-E Robot</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="w3-container" id="contact">
+            <h3 class="w3-border-bottom w3-border-deep-orange w3-padding-16">Contact</h3>
+            <p>Let's get in touch!</p>
+            <form action="https://formsubmit.co/00c448d1f462670a0dc7ca8290c37f57" method="post" class="w3-padding-16">
+                <div class="w3-row-padding" style="margin:0 -16px 16px -16px">
+                    <div class="w3-half w3-margin-top">
+                        <input class="w3-input w3-border w3-round-large w3-mobile" name="name" type="text"
+                            placeholder="Name:" required>
+                    </div>
+                    <div class="w3-half w3-margin-top">
+                        <input class="w3-input w3-border w3-round-large" name="email" type="email" placeholder="Email:"
+                            required>
+                    </div>
+                </div>
+                <textarea class="w3-input w3-border w3-round-large" name="message" rows="5" placeholder="Message:"
+                    required></textarea>
+                <button class="w3-button w3-hover-deep-orange w3-black w3-section w3-right" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16 w3-margin-top">
+        <p>&copy 2024 mstrd.eu // Powered by <a target="_blank"
+                href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+    </footer>
+</body>
 
 </html>
