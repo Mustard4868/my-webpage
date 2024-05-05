@@ -10,6 +10,10 @@ body {
     color: #e1e1e1;
 }
 
+li {
+    list-style-type: none;
+}
+
 .bgimg {
     background-attachment: fixed;
     background-position: center;
