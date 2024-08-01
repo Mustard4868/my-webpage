@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/robotic-arm.png">
+    <script src="https://kit.fontawesome.com/e4521c2cd0.js" crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
+    <title>mstrd.eu | LENN·E Robot</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="w3-top">
+
+        <!-- Wide screens -->
+        <div class="w3-bar w3-black w3-hide-small w3-animate-top">
+            <a href="../#home" class="w3-bar-item w3-button w3-hover-deep-orange">Home</a>
+            <a href="#description" class="w3-bar-item w3-button w3-hover-deep-orange">Description</a>
+            <a href="#reflection" class="w3-bar-item w3-button w3-hover-deep-orange">Reflection</a>
+            <a href="#pictures" class="w3-bar-item w3-button w3-hover-deep-orange">Pictures</a>
+        </div>
+
+        <!-- Mobile screens -->
+        <div class="w3-hide-medium w3-hide-large w3-animate-top">
+            <div onclick="clickMenu()" class="w3-dropdown-click w3-mobile w3-black">
+                <button class="w3-button w3-mobile w3-black w3-hover-deep-orange">MENU</button>
+                <div class="w3-dropdown-content w3-bar-block">
+                    <a href="../#home" class="w3-bar-item w3-button w3-black w3-hover-deep-orange w3-mobile">Home</a>
+                    <a href="#description"
+                        class="w3-bar-item w3-button w3-black w3-hover-deep-orange w3-mobile">Description</a>
+                    <a href="#reflection"
+                        class="w3-bar-item w3-button w3-black w3-hover-deep-orange w3-mobile">Reflection</a>
+                    <a href="#pictures"
+                        class="w3-bar-item w3-button w3-black w3-hover-deep-orange w3-mobile">Pictures</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="w3-container w3-padding-32 w3-margin-top">
+        <h1 class="w3-border-bottom w3-border-deep-orange w3-padding-16 w3-center">LENN·E Robot</h1>
+        <div class="w3-center w3-padding-16 w3-container">
+            <img class="w3-mobile" src="../images/MSTRD-LENNE-ROBOT-1-THUMBNAIL.jpg" alt="" width="50%">
+        </div>
+    </div>
+
+    <!-- Description -->
+    <div class="w3-container" id="description">
+        <h3 class="w3-border-bottom w3-border-deep-orange w3-padding-16">Description</h3>
+        <p>LENN·E Robot is a school project, it is based of the <a href="https://github.com/P33a/RobotAtFactoryLite"
+                target="_blank">RobotAtFactory Lite</a> challenge. The goal of the project is to build a robot which is
+            capable of navigating a pre-defined course. The course is charted by black lines on a white canvas.
+            There are colored boxes on one side of the course, these boxes are placed in a random order, they must be
+            identified by the robot based on their color, and relocated to the other side of the course and their
+            associated position.
+            <br>
+            <br>
+            The robot is equipped with a plethera of sensors, e.g. ultrasonic sensor, color sensor, line tracking
+            sensor.
+            By applying some clever programming, the robot is able to navigate the course and identify the colored
+            boxes.
+        </p>
+    </div>
+
+    <!-- Reflection -->
+    <div class="w3-container" id="reflection">
+        <h3 class="w3-border-bottom w3-border-deep-orange w3-padding-16">Reflection</h3>
+        <p>I was very excited to start this project; unfortunately not everybody appeared as excited as I was, which
+            quickly slowed our progress. During the project we had numerous setbacks and annoyances. Our robot was
+            accidentally dropped by one of the teammates, destroying most of the 3D printed parts and the line tracking
+            sensor. The 3D printed parts were easy to replace, but the line tracking sensor could not be delivered in
+            time before the final test.
+            This resulted in us failing at the first attempt, luckily for us the line sensor got delivered soon after
+            allowing us to continue testing and optimizing the robot.
+            <br><br>
+            In the end we managed to make the robot work mostly as intended, only it had some issues recognizing the
+            junctions at which it needed to turn.
+            Although I am not enterily satisfied with the end result, I do think I learned a lot from this project.
+        </p>
+    </div>
+
+    <!-- Pictures -->
+    <div class="w3-container" id="pictures">
+        <h3 class="w3-border-bottom w3-border-deep-orange w3-padding-16">Pictures</h3>
+        <div class="w3-row-padding">
+            <!-- 33% // Column 1 -->
+            <div class="w3-quarter">
+                <div class="w3-margin-top">
+                    <a class="w3-hover-opacity w3-mobile" href="../images/MSTRD-LENNE-ROBOT-0-HD.png" target="_blank">
+                        <img src="../images/MSTRD-LENNE-ROBOT-0-THUMBNAIL.jpg" width="100%" alt="">
+                    </a>
+                </div>
+
+            </div>
+            <!-- 50% // Column 2 -->
+            <div class="w3-quarter">
+                <div class="w3-margin-top">
+                    <a class="w3-hover-opacity w3-mobile" href="../images/MSTRD-LENNE-ROBOT-1-HD.png" target="_blank">
+                        <img src="../images/MSTRD-LENNE-ROBOT-1-THUMBNAIL.jpg" width="100%" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- 75% // Column 3 -->
+            <div class="w3-quarter">
+                <div class="w3-margin-top">
+                    <a class="w3-hover-opacity w3-mobile" href="../images/MSTRD-LENNE-ROBOT-2-HD.png" target="_blank">
+                        <img src="../images/MSTRD-LENNE-ROBOT-2-THUMBNAIL.jpg" width="100%" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- 100% // Column 4 -->
+            <div class="w3-quarter">
+            </div>
+        </div>
+    </div>
+    <br>
+    <footer class="w3-center w3-black w3-padding-16 w3-margin-top">
+        <p>&copy 2024 mstrd.eu // Powered by <a target="_blank"
+                href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+    </footer>
+</body>
+
+</html>
